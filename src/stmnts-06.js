@@ -33,7 +33,10 @@ function isBlank(str) {
  */
 function sayHelloOrBye(name, num) {
   // write your code here & return
-  return (`${name} ${num}`);
+  if (num === 0) {
+    return `Hello ${name}`;
+  }
+  return `Bye ${name}`;
 }
 
 /**

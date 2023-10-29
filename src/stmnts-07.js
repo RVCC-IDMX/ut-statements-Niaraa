@@ -32,7 +32,8 @@ function logicalOr(a, b) {
  * @returns {boolean} - the opposite of the given boolean
  */
 function invertBoolean(bool) {
-  return bool = !bool;
+  const boo = !bool;
+  return boo;
 }
 
 /**
@@ -50,7 +51,14 @@ function invertBoolean(bool) {
  */
 function numberOfOdds(num) {
   // write your code here & return
-
+  let count = 0;
+  // eslint-disable-next-line no-plusplus
+  for (let i = 0; i < num; i++) {
+    if (i % 2 === 1) {
+      count += 1;
+    }
+  }
+  return count;
 }
 
 /**
@@ -64,6 +72,12 @@ function numberOfOdds(num) {
  */
 function addUpTheNumbers(num) {
   // write your code here & return
+  let count = 0;
+  // eslint-disable-next-line no-plusplus
+  for (let i = 0; i <= num; i++) {
+    count += i;
+  }
+  return count;
 }
 
 /**
@@ -83,8 +97,19 @@ function addUpTheNumbers(num) {
  */
 function gradeGenerator(score) {
   // write your code here & return
-
-  return ['A, B, C, D, F'];
+  if (score < 60) {
+    return 'F';
+  }
+  if (score < 70) {
+    return 'D';
+  }
+  if (score < 80) {
+    return 'C';
+  }
+  if (score < 90) {
+    return 'B';
+  }
+  return 'A';
 }
 
 /**
@@ -105,7 +130,12 @@ function gradeGenerator(score) {
  */
 function getGrade(name, score) {
   // write your code here & return
-
+  const grade = gradeGenerator(score);
+  let article = 'a';
+  if (grade === 'A' || grade === 'F') {
+    article = 'an';
+  }
+  return `${name} got ${article} ${grade}`;
 }
 
 module.exports = {
