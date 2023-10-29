@@ -12,16 +12,15 @@
  * @returns {boolean} true if str is a string
  */
 function isString(str) {
-  // write your code here & return
+  return (typeof str === 'string');
 }
-
 /**
- * Returns a boolean indicating whether the given value an empty string
+ * Returns a boolean indicating whether the given value is an empty string
  * @param {string} str - the string to check
  * @returns {boolean}  - true if str is blank (empty)
  */
 function isBlank(str) {
-  // write your code here & return
+  return (!str || str.length === 0);
 }
 
 /**
@@ -34,6 +33,7 @@ function isBlank(str) {
  */
 function sayHelloOrBye(name, num) {
   // write your code here & return
+  return (`${name} ${num}`);
 }
 
 /**
@@ -44,7 +44,7 @@ function sayHelloOrBye(name, num) {
 
  */
 function compareStrings(str1, str2) {
-  // write your code here & return
+  return (str1 === str2);
 }
 
 module.exports = {

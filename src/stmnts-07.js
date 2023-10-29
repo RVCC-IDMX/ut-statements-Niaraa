@@ -13,7 +13,7 @@
 
  */
 function logicalAnd(a, b) {
-  // write your code here & return
+  return a && b;
 }
 
 /**
@@ -23,7 +23,7 @@ function logicalAnd(a, b) {
  * @returns {boolean} - true if a or b is truthy, false if both are falsy
  */
 function logicalOr(a, b) {
-  // write your code here & return
+  return a || b;
 }
 
 /**
@@ -32,7 +32,7 @@ function logicalOr(a, b) {
  * @returns {boolean} - the opposite of the given boolean
  */
 function invertBoolean(bool) {
-  // write your code here & return
+  return bool = !bool;
 }
 
 /**
@@ -50,6 +50,7 @@ function invertBoolean(bool) {
  */
 function numberOfOdds(num) {
   // write your code here & return
+
 }
 
 /**
@@ -82,6 +83,8 @@ function addUpTheNumbers(num) {
  */
 function gradeGenerator(score) {
   // write your code here & return
+
+  return ['A, B, C, D, F'];
 }
 
 /**
@@ -102,6 +105,7 @@ function gradeGenerator(score) {
  */
 function getGrade(name, score) {
   // write your code here & return
+
 }
 
 module.exports = {
